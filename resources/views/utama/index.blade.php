@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Halaman Utama</title>
   </head>
@@ -32,6 +33,48 @@
             </div>
           </nav>
         </div>
+       </div>
+       
+       <div class="row">
+         <div class="col-sm-12">
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+             <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+             </ol>
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <img src="{{ url('img/gambar1.jpg') }}" class="img-fluid" alt="Responsif image" width="1500px">
+               </div>
+               <div class="carousel-item">
+                 <img src="{{ url('img/gambar2.jpg') }}" class="img-fluid" alt="Responsif image" width="1500px">
+               </div>
+               <div class="carousel-item">
+                 <img src="{{ url('img/gambar3.jpg') }}" class="img-fluid" alt="Responsif image" width="1500px">
+               </div>
+             </div>
+             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+             </a>
+
+             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+     @yield('content') 
+     <div class="row">
+       <div class="col-sm-12">
+         <div class="card text-center">
+           <div class="card-footer text-muted">
+             Copyright Himti-Umt 2020
+           </div>
+         </div>
        </div>
      </div>
 
